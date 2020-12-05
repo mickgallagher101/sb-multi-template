@@ -1,0 +1,58 @@
+plugins {
+    // Plugins method cannot be called within subprojects. Has to run outside.
+    id 'org.springframework.boot' version '2.4.0'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'groovy-gradle-plugin'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+}
+
+allprojects {
+    group = 'com.micks.pm'
+    version = '0.0.1-SNAPSHOT'
+    sourceCompatibility = 15
+}
+
+subprojects {
+
+    apply plugin: 'java'
+    apply plugin: 'io.spring.dependency-management'
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+    }
+
+    dependencies {
+
+        compileOnly 'org.projectlombok:lombok'
+        annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+        annotationProcessor 'org.projectlombok:lombok'
+
+        /************************* Test dependencies ***************************************/
+
+
+    }
+
+    compileJava {
+        doFirst {
+            options.compilerArgs = [
+                    '--module-path', classpath.asPath
+            ]
+        }
+    }
+
+    compileTestJava {
+        doFirst {
+            options.compilerArgs = [
+                    '--module-path', classpath.asPath
+            ]
+        }
+    }
+
+}

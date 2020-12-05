@@ -1,6 +1,0 @@
-
-rootProject.name = 'sb-multi-template'
-
-include 'sb-web-app'
-include 'sb-library-one'
-

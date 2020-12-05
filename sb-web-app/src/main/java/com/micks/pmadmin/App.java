@@ -3,11 +3,13 @@
  */
 package com.micks.pmadmin;
 
-@SpringBootApplication
-public class MainApp implements CommandLineRunner {
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import sb.library.one.Library;
 
-    @Autowired
-    DbInitializationService dbInitializationService;
+@SpringBootApplication
+public class App implements CommandLineRunner {
 
     /**
      * Entry point for the Spring-boot container
@@ -16,9 +18,15 @@ public class MainApp implements CommandLineRunner {
      */
     public static void main(String[] args) {
 
-        SpringApplication.run(MainApp.class, args);
+        SpringApplication.run(App.class, args);
     }
 
 
+    @Override
+    public void run(String... args) throws Exception {
 
+        Library library = new Library();
+        library.someLibraryMethod();
+
+    }
 }

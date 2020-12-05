@@ -9,6 +9,8 @@ public class Library {
 
         LombokTest lombokTest = new LombokTest();
 
+        System.out.println("Just ran someLibraryMethod()...");
+
         return true;
     }
 

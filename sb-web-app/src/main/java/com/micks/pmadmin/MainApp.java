@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import sb.library.one.Library;
 
 @SpringBootApplication
-public class App implements CommandLineRunner {
+public class MainApp implements CommandLineRunner {
 
     /**
      * Entry point for the Spring-boot container
@@ -18,7 +18,7 @@ public class App implements CommandLineRunner {
      */
     public static void main(String[] args) {
 
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(MainApp.class, args);
     }
 
 

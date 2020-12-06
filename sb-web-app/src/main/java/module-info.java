@@ -8,14 +8,15 @@
 
 module sb.webapp {
 
+    exports com.micks.pmadmin;
+
     requires sb.library.one;
 
-    // Required Spring modules
+    requires spring.core;
     requires spring.boot;
     requires spring.context;
-    requires spring.beans;
-    requires spring.core;
     requires spring.boot.autoconfigure;
-
+    requires spring.beans;
+    requires spring.web;
     requires lombok;
 }

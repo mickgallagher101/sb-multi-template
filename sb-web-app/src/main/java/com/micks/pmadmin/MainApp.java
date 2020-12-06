@@ -3,7 +3,6 @@
  */
 package com.micks.pmadmin;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,8 +11,15 @@ import sb.library.one.Library;
 @SpringBootApplication
 public class MainApp implements CommandLineRunner {
 
-    @Autowired
-    private Library library;
+    //@Autowired
+    //private Library library;
+
+    private final Library library;
+
+    public MainApp(Library library) {
+        this.library = library;
+    }
+
 
     /**
      * Entry point for the Spring-boot container

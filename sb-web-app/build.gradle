@@ -26,6 +26,10 @@ bootRun {
     }
 }
 
+bootJar {
+    enabled = true
+}
+
 application {
     // Define the main class for the application.
     mainClassName = 'com.micks.pmadmin.MainApp'

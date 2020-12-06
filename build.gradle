@@ -100,5 +100,11 @@ subprojects {
         }
         ignoreFailures = true
     }
+
+    bootJar {
+        // The bootJar task tries to create an executable jar, and that requires a main()
+        // method. At the top level we leave that to each subproject to decide.
+        enabled = false
+    }
 }
 

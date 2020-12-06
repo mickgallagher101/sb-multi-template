@@ -3,6 +3,9 @@
  */
 package sb.library.one;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class Library {
 
     public boolean someLibraryMethod() {

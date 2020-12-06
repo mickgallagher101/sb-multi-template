@@ -10,5 +10,9 @@ module sb.library.one {
 
     exports sb.library.one;
 
+    requires spring.boot;
+    requires spring.context;
+    requires spring.core;
+
     requires lombok;
 }

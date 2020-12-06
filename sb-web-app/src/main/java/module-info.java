@@ -13,6 +13,8 @@ module sb.webapp {
     // Required Spring modules
     requires spring.boot;
     requires spring.context;
+    requires spring.beans;
+    requires spring.core;
     requires spring.boot.autoconfigure;
 
     requires lombok;

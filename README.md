@@ -27,7 +27,7 @@ java -jar sb-web-app/build/libs/sb-web-app-0.0.1-SNAPSHOT.jar
 http://localhost:8085/
 ```    
 
-## SB-API-APP - first application
+## SB-API-APP - second application
 ### Gradle notes - sb-api-app:
 - includes sb-library-two
 - Run the app from the root folder but referencing only the web-app

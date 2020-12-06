@@ -8,14 +8,14 @@ plugins {
 }
 
 dependencies {
-
-    implementation('io.projectreactor:reactor-core')
-
-    testImplementation('io.projectreactor:reactor-test')
-
+    implementation 'org.springframework.boot:spring-boot-starter'
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
 bootJar {
+    // The bootJar task tries to create an executable jar, and that requires a main()
+    // method. As a result, you need to disable the bootJar task and enable the jar task
+    // (which creates an ordinary jar rather than an executable jar).
     enabled = false
 }
 

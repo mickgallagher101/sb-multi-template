@@ -39,6 +39,13 @@ subprojects {
 
     test {
         useJUnitPlatform()
+        testLogging {
+            // Display Junit logger messages to stdout when running outside of Intellij
+            outputs.upToDateWhen { false }
+            //showStandardStreams = true
+            events "passed", "skipped", "failed"
+        }
+        ignoreFailures = true
     }
 
     compileJava {

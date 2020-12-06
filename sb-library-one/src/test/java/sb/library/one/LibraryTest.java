@@ -5,13 +5,20 @@ package sb.library.one;
 
 
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.springframework.test.util.AssertionErrors.assertTrue;
 
 public class LibraryTest {
+
+    @Autowired
+    Library library;
+
     @Test
     public void testSomeLibraryMethod() {
         Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+        assertTrue("someLibraryMethod should return 'true'",
+                classUnderTest.someLibraryMethod());
     }
+
 }

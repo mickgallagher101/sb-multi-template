@@ -1,9 +1,11 @@
 
-plugins{
-    id 'java-library'
+dependencies {
 }
 
-dependencies {
+bootJar {
+    enabled = false
+}
 
-implementation 'org.projectlombok:lombok:1.18.16'
+jar {
+    enabled = true
 }

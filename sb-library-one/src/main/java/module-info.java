@@ -8,7 +8,12 @@
 
 module sb.library.one {
 
-    exports sb.library.one;
+    exports com.micks.pmlib;
 
+    requires spring.core;
+    requires spring.boot;
+    requires spring.context;
+    requires spring.boot.autoconfigure;
+    requires spring.beans;
     requires lombok;
 }

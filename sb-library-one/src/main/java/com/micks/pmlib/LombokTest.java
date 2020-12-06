@@ -1,4 +1,4 @@
-package sb.library.one;
+package com.micks.pmlib;
 
 import lombok.Data;
 

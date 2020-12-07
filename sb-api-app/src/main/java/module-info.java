@@ -6,14 +6,18 @@
  * @since Dec 05, 2020
  */
 
-module sb.library.one {
+module sb.apiapp {
 
-    exports com.micks.pmlib1;
+    exports com.micks.pmapi;
+
+    requires sb.library.one;
+    requires sb.library.two;
 
     requires spring.core;
     requires spring.boot;
     requires spring.context;
     requires spring.boot.autoconfigure;
     requires spring.beans;
+    requires spring.web;
     requires lombok;
 }

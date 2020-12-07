@@ -1,4 +1,4 @@
-package com.micks.pmlib;
+package com.micks.pmlib2;
 
 import lombok.Data;
 
@@ -10,7 +10,7 @@ import lombok.Data;
  * @since Dec 05, 2020
  */
 @Data
-public class LombokTest {
+public class LombokTwoTest {
 
     private String id;
     private String value;

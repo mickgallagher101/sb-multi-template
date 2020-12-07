@@ -9,17 +9,20 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.micks.pmlib.Library;
+import com.micks.pmlib1.LibraryOne;
+import com.micks.pmlib2.LibraryTwo;
 
 @Slf4j
 @RestController
-@SpringBootApplication(scanBasePackages = "com.micks")
-public class MainApp implements CommandLineRunner {
+@SpringBootApplication(scanBasePackages = {"com.micks"})
+public class MainWebApp implements CommandLineRunner {
 
-    private final Library library;
+    private final LibraryOne libraryOne;
+    private final LibraryTwo libraryTwo;
 
-    public MainApp(Library library) {
-        this.library = library;
+    public MainWebApp(LibraryOne libraryOne, LibraryTwo libraryTwo) {
+        this.libraryOne = libraryOne;
+        this.libraryTwo = libraryTwo;
     }
 
     /**
@@ -29,7 +32,7 @@ public class MainApp implements CommandLineRunner {
      */
     public static void main(String[] args) {
 
-        SpringApplication.run(MainApp.class, args);
+        SpringApplication.run(MainWebApp.class, args);
     }
 
     @GetMapping("/")
@@ -44,7 +47,8 @@ public class MainApp implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        library.someLibraryMethod();
+        libraryOne.someLibraryOneMethod();
+        libraryTwo.someLibraryTwoMethod();
 
     }
 }

@@ -11,6 +11,7 @@ module sb.webapp {
     exports com.micks.pmadmin;
 
     requires sb.library.one;
+    requires sb.library.two;
 
     requires spring.core;
     requires spring.boot;

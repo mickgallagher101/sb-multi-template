@@ -6,9 +6,9 @@
  * @since Dec 05, 2020
  */
 
-module sb.library.one {
+module sb.library.two {
 
-    exports com.micks.pmlib1;
+    exports com.micks.pmlib2;
 
     requires spring.core;
     requires spring.boot;

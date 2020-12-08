@@ -2,6 +2,8 @@
 rootProject.name = 'sb-multi-template'
 
 include 'sb-web-app'
+include 'sb-api-app'
 include 'sb-library-one'
+include 'sb-library-two'
 
 

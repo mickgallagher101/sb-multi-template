@@ -29,7 +29,8 @@
 
 ```
 ./gradlew clean sb-web-app:bootrun
-http://localhost:8085/
+
+Open your browser to:  http://localhost:8085/
 ```
 
 - Or build a runnable jar (bootjar) and run from the command line
@@ -37,7 +38,8 @@ http://localhost:8085/
 ```
 ./gradlew clean sb-web-app:bootjar
 java -jar sb-web-app/build/libs/sb-web-app-0.0.1-SNAPSHOT.jar
-http://localhost:8085/
+
+Open your browser to:  http://localhost:8085/
 ```    
 
 ## SB-API-APP - second application
@@ -49,7 +51,8 @@ http://localhost:8085/
 
 ```
 ./gradlew clean sb-api-app:bootrun
-http://localhost:8086/
+
+Open your browser to: http://localhost:8086/
 ```
 
 - Or build a runnable jar (bootjar) and run from the command line
@@ -57,7 +60,8 @@ http://localhost:8086/
 ```
 ./gradlew clean sb-api-app:bootjar
 java -jar sb-api-app/build/libs/sb-api-app-0.0.1-SNAPSHOT.jar
-http://localhost:8086/
+
+Open your browser to: http://localhost:8086/
 ```    
 
 ### Other notes

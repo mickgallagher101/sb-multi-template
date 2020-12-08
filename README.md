@@ -21,7 +21,6 @@
   not modular.
 
 ## SB-WEB-APP - first application
-
 ### Gradle notes - sb-web-app:
 
 - includes sb-library-one
@@ -42,7 +41,6 @@ http://localhost:8085/
 ```    
 
 ## SB-API-APP - second application
-
 ### Gradle notes - sb-api-app:
 
 - includes sb-library-one
@@ -63,10 +61,13 @@ http://localhost:8086/
 ```    
 
 ### Other notes
-
 - bootjar is a Spring executable jar. You only build one bootjar for the main app.
 - Libraries will get built as Jar files but will include spring dependencies.
 - Libraies should be told in the build file to not build a bootjar (enabled = false)
-
+- The gradle build and bootrun commands above work from the command line but not from Intellij
+- Intellij seems to complain about several things to do with this project
+    - None of the gradle tasks run to completion from intellij.
+    - Package declared in the unnamed module but sb-web-app doesn't read it - can't figure out why
+    - Could not find method implementation() when running the Intellij bootjar gradle task
 
 

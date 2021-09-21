@@ -1,0 +1,12 @@
+{
+  "summary": {
+    "title": "Test model",
+    "owner": "Mick",
+    "description": "Some code"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "reviewer": "Mick"
+  }
+}
